@@ -8,7 +8,7 @@ if(isset($_POST['message'])){
     
 	
 	$to      = 'plawansusu@hotmail.com';
-	$subject = 'Site Contact Form';
+	$subject = 'Portfolio contact';
 
 	$headers = 'From: '. $email . "\r\n" .
     'Reply-To: '. $email . "\r\n" .
@@ -31,3 +31,41 @@ if(isset($_POST['message'])){
 }
 
 ?>
+
+
+
+
+<!-- <?php -->
+
+// if(isset($_POST['message'])){
+
+// 	$name = $_POST['name'];
+// 	$email = $_POST['email'];
+// 	$message = $_POST['message'];
+    
+	
+// 	$to      = 'plawansusu@hotmail.com';
+// 	$subject = 'Site Contact Form';
+
+// 	$headers = 'From: '. $email . "\r\n" .
+//     'Reply-To: '. $email . "\r\n" .
+//     'X-Mailer: PHP/' . phpversion();
+
+// 	$status = mail($to, $subject, $message, $headers);
+
+// 	if($status == TRUE){	
+// 		$res['sendstatus'] = 'done';
+	
+// 		//Edit your message here
+// 		$res['message'] = 'Form Submission Successful';
+//     }
+// 	else{
+// 		$res['message'] = 'Failed to send mail. Please mail me to plawansusu@hotmail.com';
+// 	}
+	
+	
+// 	echo json_encode($res);
+// }
+
+?>
+
