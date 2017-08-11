@@ -126,31 +126,31 @@
 		
 	
 		$("#response").hide();
-		$('#contact-form').submit(function(e) {
-		e.preventDefault();
+		// $('#contact-form').submit(function(e) {
+		
 		
 
-		$('.btn').on('click', function() {
-    	var $this = $(this);
+		$('#contact-form').submit('click', function(e) {
+		e.preventDefault();
     	
-  		$this.button('loading');
-    	
+    	$(".btn").button('loading');
     	setTimeout(function() {
-        $this.button('reset');
-    	}, 4000);
+    	
+    	// var $this = $(this);
+        $(".btn").button('reset');
+    	}, 3000);
 
     	 setTimeout(function() {
 
        $("#response").show();
+ 		$("#c_message, #c_email, #c_name").val("");
+
+		}, 4000);
 
 
-	}, 5000);
-});
-		//  var $this = $(this);
-  // $this.button('loading');
-  //   setTimeout(function() {
-  //      $this.button('reset');
-  //  }, 2000);
+    	
+// });
+
 		});
 
 	
