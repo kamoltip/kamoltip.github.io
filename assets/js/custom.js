@@ -126,10 +126,7 @@
 		
 	
 		$("#response").hide();
-		// $('#contact-form').submit(function(e) {
 		
-		
-
 		$('#contact-form').submit('click', function(e) {
 		e.preventDefault();
     	
@@ -146,10 +143,6 @@
  		$("#c_message, #c_email, #c_name").val("");
 
 		}, 4000);
-
-
-    	
-// });
 
 		});
 
